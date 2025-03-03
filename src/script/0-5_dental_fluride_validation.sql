@@ -56,7 +56,7 @@ LEFT JOIN ovst AS o ON o.vn = d.vn
 LEFT JOIN doctor AS doc ON d.doctor = doc.code
 LEFT JOIN patient AS pt ON pt.hn = o.hn
 WHERE o.vstdate BETWEEN @ds1 AND @ds2
-AND dt.icd10tm_operation_code IN ('2377020', '23077021')
+AND dt.icd10tm_operation_code IN ('2377020', '2377021')
 #AND dc.dcaries + dc.dfilling + dc.dextract <= 20
 #AND dc.dteeth BETWEEN 1 AND 20
 #AND dc.dcaries + dc.dfilling <= dc.dteeth
@@ -123,7 +123,7 @@ LEFT JOIN ovst AS o ON o.vn = d.vn
 LEFT JOIN doctor AS doc ON d.doctor = doc.code
 LEFT JOIN patient AS pt ON pt.hn = o.hn
 WHERE o.vstdate BETWEEN @ds1 AND @ds2
-AND dt.icd10tm_operation_code IN ('2377020', '23077021')
+AND dt.icd10tm_operation_code IN ('2377020', '2377021')
 #AND dc.dcaries + dc.dfilling + dc.dextract <= 20
 #AND dc.dteeth BETWEEN 1 AND 20
 #AND dc.dcaries + dc.dfilling <= dc.dteeth
